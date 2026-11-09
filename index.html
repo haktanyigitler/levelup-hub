@@ -1,141 +1,472 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <title>LEVEL UP HUB TR – Oyun ve Teknoloji</title>
-
-<meta name= content="LEVEL UP HUB TR: Oyunlar, teknoloji, oyun incelemeleri ve oyuncular için rehberler.">
-
-<meta property= content="LEVEL UP HUB TR">
-
-<meta property= content="LEVEL UP HUB TR – Oyun ve Teknoloji">
-
-<meta property= content="Oyun ve teknoloji dünyasına hoş geldin!">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="LEVELUP HUB (Level Up TR): Türkiye'nin oyun ve teknoloji platformu. Ücretsiz oyunlar, oyun incelemeleri, teknoloji haberleri ve rehberler.">
-  <meta name="keywords" content="Level Up TR, LEVELUP HUB, oyun, teknoloji, oyun rehberi, oyun inceleme, Türkiye">
-  <meta name="author" content="LEVELUP HUB">
+
+  <title>LEVEL UP HUB TR – Oyun ve Teknoloji</title>
+
+  <meta name="description" content="LEVEL UP HUB TR: Oyunlar, teknoloji, oyun incelemeleri, ücretsiz oyunlar ve oyuncular için rehberler.">
+  <meta name="keywords" content="LEVEL UP HUB TR, oyun, teknoloji, ücretsiz oyunlar, oyun rehberi, oyun incelemeleri">
+  <meta name="author" content="LEVEL UP HUB TR">
   <meta name="robots" content="index, follow">
+
   <link rel="canonical" href="https://haktanyigitler.github.io/levelup-hub/">
+
   <link rel="icon" type="image/svg+xml" href="/levelup-hub/favicon.svg">
+
+  <meta name="theme-color" content="#090b14">
+
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="tr_TR">
-  <meta property= content="LEVELUP HUB">
-  <meta property="og:title" content="LEVELUP HUB | Level Up TR">
-  <meta property="og:description" content="Türkiye'nin oyun ve teknoloji keşif noktası. Oyunlar, incelemeler ve rehberler.">
+  <meta property="og:site_name" content="LEVEL UP HUB TR">
+  <meta property="og:title" content="LEVEL UP HUB TR – Oyun ve Teknoloji">
+  <meta property="og:description" content="Oyun ve teknoloji dünyasına hoş geldin!">
   <meta property="og:url" content="https://haktanyigitler.github.io/levelup-hub/">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="LEVELUP HUB | Level Up TR">
-  <meta name="twitter:description" content="Oyun, teknoloji, incelemeler ve oyuncular için rehberler.">
+  <meta property="og:image" content="https://haktanyigitler.github.io/levelup-hub/levelup-cover.png">
+  <meta property="og:locale" content="tr_TR">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LEVEL UP HUB TR">
+  <meta name="twitter:description" content="Oyun ve teknoloji dünyasına hoş geldin!">
+  <meta name="twitter:image" content="https://haktanyigitler.github.io/levelup-hub/levelup-cover.png">
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "LEVELUP HUB",
-    "alternateName": ["Level Up TR", "LevelUp Hub"],
-    "url": "https://haktanyigitler.github.io/levelup-hub/",
-    "inLanguage": "tr-TR",
-    "description": "Türkiye'de oyun, teknoloji, oyun incelemeleri ve oyuncular için rehberler."
+    "name": "LEVEL UP HUB TR",
+    "alternateName": "LEVEL UP HUB",
+    "url": "https://haktanyigitler.github.io/levelup-hub/"
   }
   </script>
-  <meta name="theme-color" content="#090b14">
-  <title>LevelUp Hub | Level Up Oyun ve Teknoloji</title>
 
-<style>
-    :root{--bg:#090b14;--panel:#111625;--panel2:#151d30;--text:#f4f6ff;--muted:#9ba7bf;--cyan:#62e7ff;--purple:#a78bfa;--line:#263149}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% -10%,#22204b 0,transparent 35%),var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Arial,sans-serif}
-    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
-    header{position:sticky;top:0;z-index:5;background:#090b14eF;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .logo{font-size:21px;font-weight:950;letter-spacing:1.5px}.logo span{color:var(--cyan)}
-    nav{display:flex;gap:24px;color:#c4cce0;font-size:14px}nav a:hover,.active{color:var(--cyan)}
-    .hero{padding:72px 0 48px;display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
-    .eyebrow{color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
-    h1{font-size:clamp(42px,6vw,70px);line-height:1.02;margin:16px 0 18px;letter-spacing:-2px}
-    h1 em{font-style:normal;color:var(--cyan)}.hero p{color:var(--muted);line-height:1.8;max-width:580px}
-    .actions{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}.btn{padding:12px 18px;border-radius:10px;background:linear-gradient(100deg,#5de5ff,#9b8cff);color:#080b14;font-weight:850;font-size:14px;display:inline-block}
-    .btn.secondary{background:var(--panel2);color:var(--text);border:1px solid var(--line)}
-    .hero-art{min-height:300px;border:1px solid #34365f;border-radius:22px;background:linear-gradient(145deg,#24204c,#111b32 55%,#0b2936);position:relative;overflow:hidden;display:grid;place-items:center}
-    .orb{width:190px;height:190px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e2fbff,#61e5ff 20%,#7668dc 52%,#17152f 72%);box-shadow:0 0 80px #64dfff88;position:relative}
-    .orb:after{content:"";position:absolute;inset:-28px;border:1px solid #83eaff88;border-radius:50%;transform:rotate(-25deg) scaleY(.38)}
-    .art-label{position:absolute;bottom:18px;left:20px;color:#c9d6ef;font-size:12px;letter-spacing:2px}
-    .section{padding:28px 0 58px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:22px}
-    h2{font-size:27px;margin:8px 0}.section-head p{color:var(--muted);margin:0;font-size:14px}
-    .filters{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0}.filter{border:1px solid var(--line);background:var(--panel);color:#cbd4e7;padding:9px 14px;border-radius:999px;cursor:pointer}
-    .filter.selected,.filter:hover{background:#1d3545;border-color:#4ecde8;color:var(--cyan)}
-    .search{width:min(320px,100%);background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;color:white;outline:none}.search:focus{border-color:var(--cyan)}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .card{background:linear-gradient(180deg,#151d30,#101522);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.2s;display:flex;flex-direction:column}
-    .card:hover{transform:translateY(-4px);border-color:#536b91}
-    .thumb{height:155px;display:grid;place-items:center;font-size:52px;background:linear-gradient(135deg,#29204e,#143346);position:relative}
-    .thumb.purple{background:linear-gradient(135deg,#39204e,#222c56)}.thumb.blue{background:linear-gradient(135deg,#123a50,#20234b)}.thumb.orange{background:linear-gradient(135deg,#55331f,#33204b)}
-    .tag{position:absolute;top:13px;left:13px;background:#080b14c9;border:1px solid #ffffff22;border-radius:30px;padding:6px 9px;font-size:10px;color:var(--cyan);font-weight:800;letter-spacing:.7px}
-    .card-body{padding:17px;display:flex;flex-direction:column;flex:1}.meta{font-size:11px;color:var(--muted);margin-bottom:10px}.card h3{font-size:18px;line-height:1.35;margin:0 0 10px}.card p{font-size:13px;color:var(--muted);line-height:1.65;margin:0 0 18px}.read{margin-top:auto;color:var(--cyan);font-weight:800;font-size:13px}
-    .empty{display:none;padding:28px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px}
-    .about{background:linear-gradient(120deg,#151b30,#102632);border:1px solid var(--line);border-radius:18px;padding:28px;display:flex;justify-content:space-between;gap:24px;align-items:center}.about p{color:var(--muted);line-height:1.7;max-width:700px}
-    footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-    @media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:48px}.hero-art{min-height:230px}.grid{grid-template-columns:repeat(2,1fr)}nav{gap:12px;font-size:12px}.nav{height:auto;min-height:70px;flex-wrap:wrap;padding:12px 0}.about{align-items:flex-start;flex-direction:column}}
-    @media(max-width:520px){.grid{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}nav{width:100%;justify-content:space-between}.search{width:100%}.hero-art{min-height:210px}}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #090b14;
+      color: white;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      background: rgba(9,11,20,0.96);
+      border-bottom: 1px solid #29213e;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(15px);
+    }
+
+    .navbar {
+      min-height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 900;
+      color: #a855f7;
+      letter-spacing: 1px;
+    }
+
+    .logo span {
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #d1d5db;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #a855f7;
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 35px 0 55px;
+      text-align: center;
+    }
+
+    .cover {
+      width: 100%;
+      display: block;
+      border-radius: 18px;
+      border: 1px solid #5930a5;
+      box-shadow: 0 0 35px rgba(139,92,246,0.2);
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 5vw, 48px);
+      margin-top: 35px;
+      line-height: 1.2;
+    }
+
+    .hero h1 span {
+      color: #a855f7;
+    }
+
+    .hero p {
+      color: #b8b8c8;
+      max-width: 700px;
+      margin: 18px auto 25px;
+    }
+
+    .main-button {
+      display: inline-block;
+      background: linear-gradient(90deg,#7c3aed,#2563eb);
+      padding: 13px 28px;
+      border-radius: 9px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .main-button:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0 25px #7c3aed;
+    }
+
+    /* SECTIONS */
+
+    section.content-section {
+      padding: 55px 0;
+    }
+
+    .section-title {
+      font-size: 29px;
+      margin-bottom: 10px;
+    }
+
+    .section-title span {
+      color: #a855f7;
+    }
+
+    .section-description {
+      color: #999bad;
+      margin-bottom: 30px;
+    }
+
+    /* CARDS */
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: #121522;
+      border: 1px solid #282c40;
+      padding: 25px;
+      border-radius: 14px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-7px);
+      border-color: #9333ea;
+      box-shadow: 0 8px 30px rgba(124,58,237,0.15);
+    }
+
+    .card-icon {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #a1a1b5;
+      font-size: 14px;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 17px;
+      color: #c084fc;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    /* ABOUT */
+
+    .about {
+      background: #111421;
+      border-top: 1px solid #29213e;
+      border-bottom: 1px solid #29213e;
+      padding: 55px 0;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 750px;
+      margin: 15px auto 0;
+      color: #b5b5c5;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 30px 0;
+      text-align: center;
+      color: #858597;
+      font-size: 13px;
+    }
+
+    footer strong {
+      color: #a855f7;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:700px) {
+      .navbar {
+        flex-direction: column;
+        padding: 15px 0;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .hero {
+        padding-top: 20px;
+      }
+
+      .hero h1 {
+        margin-top: 25px;
+      }
+
+      section.content-section {
+        padding: 40px 0;
+      }
+    }
   </style>
 </head>
+
 <body>
-<header><div class="wrap nav">
-  <a class="logo" href="#" aria-label="LEVELUP HUB ana sayfa"><img src="/levelup-hub/favicon.svg" alt="" width="34" height="34" style="vertical-align:middle;margin-right:8px"><span>LEVELUP</span> HUB</a>
-  <nav><a href="#icerikler">Keşfet</a><a href="#hakkimizda">Hakkımızda</a><a href="#iletisim">İletişim</a></nav>
-</div></header>
-<main>
-  <section class="wrap hero">
-    <div>
-      <div class="eyebrow">OYUN • TEKNOLOJİ • KEŞİF</div>
-      <h1>LEVELUP HUB: <em>Level Up TR</em></h1>
-      <p class="eyebrow">TÜRKİYE'NİN OYUN VE TEKNOLOJİ PLATFORMU</p>
-      <p>Yeni oyunları keşfet, teknoloji dünyasını takip et ve oyun deneyimini geliştirecek rehberlere göz at. LevelUp Hub'a hoş geldin! Level Up TR ile oyun ve teknoloji dünyasını keşfet.</p>
-      <div class="actions"><a class="btn" href="#icerikler">İçerikleri keşfet ↗</a><a class="btn secondary" href="#hakkimizda">Bizi tanı</a></div>
-    </div>
-    <div class="hero-art" aria-label="Soyut neon küre görseli"><div class="orb"></div><div class="art-label">NEXT LEVEL STARTS HERE</div></div>
-  </section>
 
-  <section class="wrap section" id="icerikler">
-    <div class="section-head"><div><div class="eyebrow">GÜNCEL AKIŞ</div><h2>Keşfetmeye başla</h2><p>İlgi alanına göre içerikleri filtrele veya arama yap.</p></div>
-      <input class="search" id="search" type="search" placeholder="İçeriklerde ara..." aria-label="İçeriklerde ara">
-    </div>
-    <div class="filters" role="group" aria-label="Kategori filtreleri">
-      <button class="filter selected" data-filter="all">Tümü</button><button class="filter" data-filter="Oyun">Oyun</button><button class="filter" data-filter="Teknoloji">Teknoloji</button><button class="filter" data-filter="Rehber">Rehber</button><button class="filter" data-filter="İnceleme">İnceleme</button>
-    </div>
-    <div class="grid" id="cards">
-      <article class="card" data-category="Oyun"><div class="thumb"><span class="tag">OYUN</span>🎮</div><div class="card-body"><div class="meta">BAŞLANGIÇ • ÖRNEK İÇERİK</div><h3>Oyun dünyasında yeni maceralara hazır mısın?</h3><p>Yeni oyunları keşfetmek için türleri, oynanış mekaniklerini ve beklentilerini nasıl değerlendirebileceğine göz at.</p><a class="read" href="#hakkimizda">Devamını keşfet →</a></div></article>
-      <article class="card" data-category="Teknoloji"><div class="thumb blue"><span class="tag">TEKNOLOJİ</span>⚡</div><div class="card-body"><div class="meta">BAŞLANGIÇ • ÖRNEK İÇERİK</div><h3>Bilgisayarını daha verimli kullanmanın yolları</h3><p>Günlük kullanımda performans, depolama ve güvenlik konularında işine yarayacak temel ipuçları.</p><a class="read" href="#hakkimizda">Devamını keşfet →</a></div></article>
-      <article class="card" data-category="Rehber"><div class="thumb purple"><span class="tag">REHBER</span>🧭</div><div class="card-body"><div class="meta">BAŞLANGIÇ • ÖRNEK İÇERİK</div><h3>Yeni başlayanlar için oyun bilgisayarı rehberi</h3><p>İşlemci, ekran kartı, RAM ve depolama seçerken hangi özelliklere dikkat etmelisin?</p><a class="read" href="#hakkimizda">Devamını keşfet →</a></div></article>
-      <article class="card" data-category="İnceleme"><div class="thumb orange"><span class="tag">İNCELEME</span>🕹️</div><div class="card-body"><div class="meta">BAŞLANGIÇ • ÖRNEK İÇERİK</div><h3>Bir oyunu incelerken nelere bakılır?</h3><p>Grafikler, hikâye, performans ve oynanış: kendi inceleme puanlama sistemini oluştur.</p><a class="read" href="#hakkimizda">Devamını keşfet →</a></div></article>
-      <article class="card" data-category="Teknoloji"><div class="thumb"><span class="tag">TEKNOLOJİ</span>💻</div><div class="card-body"><div class="meta">BAŞLANGIÇ • ÖRNEK İÇERİK</div><h3>İnternette güvenli kalmak için 5 temel kural</h3><p>Güçlü parolalar, güncellemeler ve şüpheli bağlantılar konusunda temel güvenlik alışkanlıkları.</p><a class="read" href="#hakkimizda">Devamını keşfet →</a></div></article>
-      <article class="card" data-category="Oyun"><div class="thumb purple"><span class="tag">OYUN</span>🚀</div><div class="card-body"><div class="meta">BAŞLANGIÇ • ÖRNEK İÇERİK</div><h3>Kendi oyununu geliştirmeye nereden başlamalısın?</h3><p>Fikir bulmaktan ilk prototipe kadar oyun geliştirme yolculuğunun temel adımları.</p><a class="read" href="#hakkimizda">Devamını keşfet →</a></div></article>
-    </div>
-    <div class="empty" id="empty">Aramana uygun içerik bulunamadı. Başka bir kelime dene.</div>
-  </section>
+  <header>
+    <div class="container navbar">
 
-  <section class="wrap section" id="hakkimizda"><div class="about"><div><div class="eyebrow">LEVELUP HUB HAKKINDA</div><h2>Oyuncular ve teknoloji meraklıları için.</h2><p>LevelUp Hub, oyun ve teknoloji içeriklerini tek yerde buluşturmak için hazırlanmış bağımsız bir platformdur. Bu ilk sürüm örnek içeriklerle gelir; kendi haberlerini, incelemelerini ve rehberlerini ekleyerek siteyi büyütebilirsin.</p></div><a class="btn" href="#icerikler">İçeriklere dön ↑</a></div></section>
-  <section class="wrap section" id="iletisim"><div class="eyebrow">İLETİŞİM</div><h2>Bir fikrin mi var?</h2><p style="color:var(--muted)">İletişim e-posta adresini burada kendi adresinle değiştirebilirsin: <strong style="color:var(--cyan)">eposta-adresin@example.com</strong></p></section>
-</main>
-<footer><div class="wrap foot"><span>© 2026 LEVELUP HUB</span><span>Oyun ve teknoloji meraklıları için hazırlandı.</span></div></footer>
-<script>
-  const search=document.getElementById('search');
-  const buttons=[...document.querySelectorAll('.filter')];
-  const cards=[...document.querySelectorAll('.card')];
-  let category='all';
-  function update(){
-    const q=search.value.toLocaleLowerCase('tr').trim();let shown=0;
-    cards.forEach(card=>{
-      const matchCategory=category==='all'||card.dataset.category===category;
-      const matchText=card.innerText.toLocaleLowerCase('tr').includes(q);
-      card.style.display=matchCategory&&matchText?'flex':'none';
-      if(matchCategory&&matchText)shown++;
-    });
-    document.getElementById('empty').style.display=shown?'none':'block';
-  }
-  buttons.forEach(btn=>btn.addEventListener('click',()=>{
-    category=btn.dataset.filter;buttons.forEach(b=>b.classList.toggle('selected',b===btn));update();
-  }));
-  search.addEventListener('input',update);
-</script>
+      <a href="#anasayfa" class="logo">
+        LEVEL UP <span>HUB TR</span>
+      </a>
+
+      <nav>
+        <a href="#anasayfa">Ana Sayfa</a>
+        <a href="#oyunlar">Oyunlar</a>
+        <a href="#teknoloji">Teknoloji</a>
+        <a href="#incelemeler">İncelemeler</a>
+        <a href="#hakkimizda">Hakkımızda</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero container" id="anasayfa">
+
+      <img
+        src="/levelup-hub/levelup-cover.png"
+        alt="LEVEL UP HUB TR Oyun ve Teknoloji"
+        class="cover"
+      >
+
+      <h1>
+        Oyun ve Teknoloji Dünyasına
+        <span>Hoş Geldin!</span>
+      </h1>
+
+      <p>
+        Yeni oyunlar keşfet, teknoloji dünyasını takip et,
+        incelemeleri oku ve oyun dünyasında seviyeni yükselt!
+      </p>
+
+      <a href="#oyunlar" class="main-button">
+        Keşfetmeye Başla 🚀
+      </a>
+
+    </section>
+
+    <section class="content-section container" id="oyunlar">
+
+      <h2 class="section-title">
+        🎮 <span>Oyun</span> Dünyası
+      </h2>
+
+      <p class="section-description">
+        Oyun dünyasından en heyecan verici içerikler.
+      </p>
+
+      <div class="cards">
+
+        <article class="card">
+          <div class="card-icon">🕹️</div>
+          <h3>Ücretsiz Oyunlar</h3>
+          <p>Ücretsiz oynayabileceğin oyunları keşfet.</p>
+          <a href="#oyunlar">Yakında →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🏎️</div>
+          <h3>Araba Oyunları</h3>
+          <p>Hız, yarış ve heyecan dolu oyunlar.</p>
+          <a href="#oyunlar">Yakında →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">👾</div>
+          <h3>Tarayıcı Oyunları</h3>
+          <p>İndirmeden oynayabileceğin oyunlar.</p>
+          <a href="#oyunlar">Yakında →</a>
+        </article>
+
+      </div>
+
+    </section>
+
+    <section class="content-section container" id="teknoloji">
+
+      <h2 class="section-title">
+        💻 <span>Teknoloji</span> Dünyası
+      </h2>
+
+      <p class="section-description">
+        Teknoloji dünyasındaki gelişmeler ve yenilikler.
+      </p>
+
+      <div class="cards">
+
+        <article class="card">
+          <div class="card-icon">🤖</div>
+          <h3>Yapay Zekâ</h3>
+          <p>Yapay zekâ araçları ve yeni teknolojiler.</p>
+          <a href="#teknoloji">Yakında →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🖥️</div>
+          <h3>Bilgisayar</h3>
+          <p>Bilgisayar dünyasından haberler ve rehberler.</p>
+          <a href="#teknoloji">Yakında →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">📱</div>
+          <h3>Mobil Teknoloji</h3>
+          <p>Telefonlar, uygulamalar ve mobil yenilikler.</p>
+          <a href="#teknoloji">Yakında →</a>
+        </article>
+
+      </div>
+
+    </section>
+
+    <section class="content-section container" id="incelemeler">
+
+      <h2 class="section-title">
+        ⭐ <span>İncelemeler</span> ve Rehberler
+      </h2>
+
+      <p class="section-description">
+        Oyunları, uygulamaları ve teknolojik ürünleri keşfet.
+      </p>
+
+      <div class="cards">
+
+        <article class="card">
+          <div class="card-icon">📖</div>
+          <h3>Oyun Rehberleri</h3>
+          <p>Oyunlarda gelişmeni sağlayacak ipuçları.</p>
+          <a href="#incelemeler">Yakında →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🔍</div>
+          <h3>Oyun İncelemeleri</h3>
+          <p>Yeni oyunlar hakkında değerlendirmeler.</p>
+          <a href="#incelemeler">Yakında →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">⚡</div>
+          <h3>Teknoloji Rehberleri</h3>
+          <p>Teknolojiyi daha iyi kullanmanı sağlayacak bilgiler.</p>
+          <a href="#incelemeler">Yakında →</a>
+        </article>
+
+      </div>
+
+    </section>
+
+    <section class="about" id="hakkimizda">
+
+      <div class="container">
+
+        <h2 class="section-title">
+          LEVEL UP <span>HUB TR</span>
+        </h2>
+
+        <p>
+          LEVEL UP HUB TR, oyun ve teknoloji dünyasını
+          bir araya getiren bağımsız bir platformdur.
+          Amacımız oyunculara, teknoloji meraklılarına
+          ve keşfetmeyi seven herkese faydalı içerikler sunmak.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 <strong>LEVEL UP HUB TR</strong> —
+      Tüm hakları saklıdır.
+      <p>Oyun • Teknoloji • Daha Fazlası 🚀</p>
+    </div>
+  </footer>
+
 </body>
 </html>
